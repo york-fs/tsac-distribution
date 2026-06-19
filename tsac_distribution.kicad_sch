@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "TSAC Distribution")
-		(date "2026-04-14")
+		(date "2026-06-19")
 		(rev "${REVISION}")
 		(company "York Formula Student")
 	)
@@ -1763,6 +1763,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2082,9 +2189,9 @@
 		)
 		(uuid "45a2c0be-df37-4f32-a1b4-a3b9e0a18e46")
 	)
-	(text "Connector to Rear Distribution"
+	(text "Rear Distribution Connector"
 		(exclude_from_sim no)
-		(at 46.99 24.13 0)
+		(at 44.45 24.13 0)
 		(effects
 			(font
 				(size 2 2)
@@ -2175,10 +2282,16 @@
 		(uuid "1badb651-0231-4a5d-a3a3-ecbaf0ca2886")
 	)
 	(junction
-		(at 36.83 88.9)
+		(at 135.89 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2c87a282-6798-482a-a552-1b86bde4b1eb")
+		(uuid "1cff892b-01f8-4c0d-a164-3686da587be6")
+	)
+	(junction
+		(at 49.53 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "472733d4-4a3c-47e1-b7d6-21883860a297")
 	)
 	(junction
 		(at 48.26 161.29)
@@ -2187,10 +2300,22 @@
 		(uuid "5720147e-494e-41c9-9046-fcbe8feb90e6")
 	)
 	(junction
-		(at 36.83 86.36)
+		(at 49.53 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "578bccfe-b5a9-4179-937d-01503aba2a1f")
+		(uuid "bfc2ec6d-339a-4a77-85ba-036fa0e763f8")
+	)
+	(junction
+		(at 140.97 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf8309fe-6887-4f62-b42b-bac768ba1896")
+	)
+	(junction
+		(at 146.05 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe44c174-7d58-4442-a164-4bc46ab73dc7")
 	)
 	(no_connect
 		(at 35.56 154.94)
@@ -2202,16 +2327,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 39.37) (xy 66.04 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00d46356-e354-4e49-ab15-2fb569a77115")
-	)
-	(wire
-		(pts
 			(xy 36.83 171.45) (xy 36.83 170.18)
 		)
 		(stroke
@@ -2219,6 +2334,16 @@
 			(type default)
 		)
 		(uuid "03ee1817-b1a5-4c38-a2ea-945cd94b46da")
+	)
+	(wire
+		(pts
+			(xy 49.53 78.74) (xy 49.53 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0418c9d6-dd4c-4b64-abe4-779f1a9cc0f9")
 	)
 	(wire
 		(pts
@@ -2269,26 +2394,6 @@
 			(type default)
 		)
 		(uuid "17a919ca-2489-4207-864a-a1ea45f3f1c3")
-	)
-	(wire
-		(pts
-			(xy 35.56 86.36) (xy 36.83 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17cd2380-e099-4b1c-b090-f3314ed38bd1")
-	)
-	(wire
-		(pts
-			(xy 36.83 86.36) (xy 36.83 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a4ab4c7-7933-4194-a918-48ecf9a2b23e")
 	)
 	(wire
 		(pts
@@ -2362,13 +2467,23 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 88.9) (xy 36.83 88.9)
+			(xy 135.89 85.09) (xy 135.89 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2c7851d1-1e87-4168-97e2-bca45750caab")
+		(uuid "25e8c9f2-3683-4bb0-aee2-8e4110e89f49")
+	)
+	(wire
+		(pts
+			(xy 140.97 83.82) (xy 140.97 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "310236a3-7b8d-464e-a1c9-3b3ef5dd2607")
 	)
 	(wire
 		(pts
@@ -2382,7 +2497,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 78.74) (xy 36.83 78.74)
+			(xy 35.56 78.74) (xy 49.53 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2469,6 +2584,16 @@
 			(type default)
 		)
 		(uuid "41a31ed7-6114-468f-b65d-dc6e5b8c210f")
+	)
+	(wire
+		(pts
+			(xy 135.89 83.82) (xy 135.89 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41fbebf6-b4c4-412f-abb3-2cab8f1b91d6")
 	)
 	(wire
 		(pts
@@ -2562,16 +2687,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 88.9) (xy 36.83 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "567c7ff5-4bff-42ea-8664-0f6979d8cc76")
-	)
-	(wire
-		(pts
 			(xy 138.43 154.94) (xy 137.16 154.94)
 		)
 		(stroke
@@ -2622,13 +2737,33 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 83.82) (xy 36.83 83.82)
+			(xy 35.56 88.9) (xy 36.83 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "636a1d4b-06de-43de-8e9b-134172054fae")
+		(uuid "617166c2-41cd-49ed-94ce-c0e5219a1c6b")
+	)
+	(wire
+		(pts
+			(xy 151.13 85.09) (xy 146.05 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63d9090d-dd0a-40bc-b167-734e81c2bbad")
+	)
+	(wire
+		(pts
+			(xy 35.56 86.36) (xy 36.83 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "661e8be7-52b8-4617-94d1-b088d4199d1f")
 	)
 	(wire
 		(pts
@@ -2639,6 +2774,16 @@
 			(type default)
 		)
 		(uuid "66672aa2-9c9f-4f02-9b65-f6c68b52e71f")
+	)
+	(wire
+		(pts
+			(xy 35.56 83.82) (xy 36.83 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6735bc64-d453-4755-b96f-479e9f10ef2f")
 	)
 	(wire
 		(pts
@@ -2659,6 +2804,16 @@
 			(type default)
 		)
 		(uuid "677bd386-7709-401f-b8d7-144670060309")
+	)
+	(wire
+		(pts
+			(xy 49.53 81.28) (xy 49.53 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ad9c399-d692-4066-9f98-e31dbcc0850f")
 	)
 	(wire
 		(pts
@@ -2722,16 +2877,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 83.82) (xy 36.83 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7886c69b-24ef-496d-b627-3a21591d35d3")
-	)
-	(wire
-		(pts
 			(xy 35.56 50.8) (xy 36.83 50.8)
 		)
 		(stroke
@@ -2759,6 +2904,16 @@
 			(type default)
 		)
 		(uuid "7b6228e8-c202-4e4d-a976-be7258fba254")
+	)
+	(wire
+		(pts
+			(xy 146.05 83.82) (xy 146.05 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c8c2fa2-c7c2-4c1d-9718-cec347b579bc")
 	)
 	(wire
 		(pts
@@ -2842,7 +2997,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 88.9) (xy 40.64 88.9)
+			(xy 49.53 81.28) (xy 53.34 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2872,7 +3027,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 81.28) (xy 36.83 81.28)
+			(xy 35.56 81.28) (xy 49.53 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3022,7 +3177,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 76.2) (xy 36.83 76.2)
+			(xy 35.56 76.2) (xy 49.53 76.2)
 		)
 		(stroke
 			(width 0)
@@ -3122,6 +3277,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 76.2) (xy 49.53 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7233b28-123b-42f9-b6d3-075eb6310ad4")
+	)
+	(wire
+		(pts
 			(xy 39.37 110.49) (xy 38.1 110.49)
 		)
 		(stroke
@@ -3132,7 +3297,17 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 90.17) (xy 40.64 88.9)
+			(xy 140.97 85.09) (xy 135.89 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb0ece05-038f-4dfa-8b5e-ff5631fcd859")
+	)
+	(wire
+		(pts
+			(xy 53.34 82.55) (xy 53.34 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3152,6 +3327,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 83.82) (xy 151.13 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4c7eb2a-47cb-4f45-ae52-fa0ac28f06ed")
+	)
+	(wire
+		(pts
 			(xy 138.43 158.75) (xy 138.43 157.48)
 		)
 		(stroke
@@ -3159,6 +3344,16 @@
 			(type default)
 		)
 		(uuid "f4de4759-87b4-4c37-8b0f-ff8cd0846982")
+	)
+	(wire
+		(pts
+			(xy 146.05 85.09) (xy 140.97 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcee59d3-661e-46a8-a9f8-15f914227a30")
 	)
 	(wire
 		(pts
@@ -3170,9 +3365,29 @@
 		)
 		(uuid "fe5fa6e9-f1ad-4f1c-82d3-9ebace80f643")
 	)
+	(label "IMD_HOOP"
+		(at 36.83 165.1 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "24bf1eb8-1578-4c4a-a53e-ef9540b0faf1")
+	)
+	(label "IMD_TSAC"
+		(at 36.83 162.56 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "c4648f78-ba41-43d1-9f07-f09fa547c019")
+	)
 	(global_label "12V_HV_DET"
 		(shape output)
-		(at 36.83 45.72 0)
+		(at 36.83 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3182,7 +3397,7 @@
 		)
 		(uuid "0102a057-3759-4b65-af8f-55d8ff350bb4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.0374 45.72 0)
+			(at 48.0374 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3236,31 +3451,9 @@
 			)
 		)
 	)
-	(global_label "SDN_IN"
-		(shape passive)
-		(at 66.04 40.64 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right)
-		)
-		(uuid "1a9ac370-2640-4d41-9c0a-80ce0f177be4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.04 47.401 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "DISCHG"
 		(shape input)
-		(at 36.83 63.5 0)
+		(at 36.83 60.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3270,7 +3463,7 @@
 		)
 		(uuid "20a0089d-47b1-43bf-aed4-ed9ebecd3f64")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.6565 63.5 0)
+			(at 44.6565 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3348,7 +3541,7 @@
 	)
 	(global_label "SDN_IN"
 		(shape output)
-		(at 36.83 53.34 0)
+		(at 36.83 71.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3358,7 +3551,7 @@
 		)
 		(uuid "38532063-b425-4b63-a3ed-4619c7a70dfd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.466 53.34 0)
+			(at 44.466 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3392,7 +3585,7 @@
 	)
 	(global_label "PRCHG_ACT"
 		(shape input)
-		(at 36.83 68.58 0)
+		(at 36.83 86.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3402,7 +3595,7 @@
 		)
 		(uuid "3f38ef22-d0b8-4b95-8a1e-f3733472825e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.6088 68.58 0)
+			(at 47.6088 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3414,7 +3607,7 @@
 	)
 	(global_label "CANL"
 		(shape bidirectional)
-		(at 36.83 35.56 0)
+		(at 36.83 63.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3424,7 +3617,7 @@
 		)
 		(uuid "416d84ab-5fc1-45d7-9a84-02a8fc2cc473")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 43.7695 35.56 0)
+			(at 43.7695 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3480,7 +3673,7 @@
 	)
 	(global_label "AIR-_INT"
 		(shape input)
-		(at 36.83 71.12 0)
+		(at 36.83 83.82 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3490,7 +3683,7 @@
 		)
 		(uuid "4fedafad-b4bc-4f7e-a93f-5217ea45f348")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.7993 71.12 0)
+			(at 45.7993 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3502,7 +3695,7 @@
 	)
 	(global_label "5V_TSAL"
 		(shape output)
-		(at 36.83 50.8 0)
+		(at 36.83 45.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3512,7 +3705,7 @@
 		)
 		(uuid "5c591d66-c02c-4766-83f1-486958e138b5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.1326 50.8 0)
+			(at 45.1326 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3524,7 +3717,7 @@
 	)
 	(global_label "BMS_OK"
 		(shape input)
-		(at 36.83 55.88 0)
+		(at 36.83 53.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3534,7 +3727,7 @@
 		)
 		(uuid "5d20b2ee-f4ec-405b-9ef1-e3226cfb6f60")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.0851 55.88 0)
+			(at 45.0851 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3590,7 +3783,7 @@
 	)
 	(global_label "AIR+_ACT"
 		(shape input)
-		(at 36.83 78.74 0)
+		(at 36.83 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3600,7 +3793,7 @@
 		)
 		(uuid "63531215-3e59-4048-afa3-f66fe7a5d06a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.1326 78.74 0)
+			(at 46.1326 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3612,7 +3805,7 @@
 	)
 	(global_label "12V_PRCHG"
 		(shape output)
-		(at 36.83 43.18 0)
+		(at 36.83 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3622,7 +3815,7 @@
 		)
 		(uuid "67cee42a-bb07-483d-b870-33de6a62d735")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.7517 43.18 0)
+			(at 47.7517 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3700,7 +3893,7 @@
 	)
 	(global_label "PRCHG_INT"
 		(shape input)
-		(at 36.83 66.04 0)
+		(at 36.83 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3710,7 +3903,7 @@
 		)
 		(uuid "75e1bb14-af16-423d-a5cf-27a20384e1b4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.2755 66.04 0)
+			(at 47.2755 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3722,7 +3915,7 @@
 	)
 	(global_label "IMD_OK"
 		(shape input)
-		(at 36.83 58.42 0)
+		(at 36.83 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3732,7 +3925,7 @@
 		)
 		(uuid "7a8693b0-1369-4fab-843d-da1f07537c2e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.6089 58.42 0)
+			(at 44.6089 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3744,7 +3937,7 @@
 	)
 	(global_label "CANH"
 		(shape bidirectional)
-		(at 36.83 33.02 0)
+		(at 36.83 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3754,7 +3947,7 @@
 		)
 		(uuid "819c3f5b-369f-4188-a893-8f82e2ef8bdb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.0076 33.02 0)
+			(at 44.0076 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3876,7 +4069,7 @@
 	)
 	(global_label "12V_IMD"
 		(shape output)
-		(at 36.83 40.64 0)
+		(at 36.83 35.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3886,7 +4079,7 @@
 		)
 		(uuid "9b87445c-00ce-46b8-a33b-565aa590c72a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.3232 40.64 0)
+			(at 45.3232 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3942,7 +4135,7 @@
 	)
 	(global_label "HV_DET"
 		(shape input)
-		(at 36.83 81.28 0)
+		(at 36.83 43.18 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3952,7 +4145,7 @@
 		)
 		(uuid "a0538719-bbaf-4642-ba62-4976174c376f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.5136 81.28 0)
+			(at 44.5136 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3986,7 +4179,7 @@
 	)
 	(global_label "AIR-_ACT"
 		(shape input)
-		(at 36.83 73.66 0)
+		(at 36.83 68.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3996,7 +4189,7 @@
 		)
 		(uuid "a621c565-07e2-4a0c-b285-193ee5910d32")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.1326 73.66 0)
+			(at 46.1326 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4250,7 +4443,7 @@
 	)
 	(global_label "12V_FAN"
 		(shape output)
-		(at 36.83 48.26 0)
+		(at 36.83 33.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4260,7 +4453,7 @@
 		)
 		(uuid "f3d6c25f-2879-43cb-ab8c-2de537b0418c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.4659 48.26 0)
+			(at 45.4659 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4294,7 +4487,7 @@
 	)
 	(global_label "IMD_PWM"
 		(shape input)
-		(at 36.83 60.96 0)
+		(at 36.83 58.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4304,7 +4497,7 @@
 		)
 		(uuid "f7081da4-2404-4c82-917b-2685bf9f665e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.8471 60.96 0)
+			(at 45.8471 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4316,7 +4509,7 @@
 	)
 	(global_label "AIR+_INT"
 		(shape input)
-		(at 36.83 76.2 0)
+		(at 36.83 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4326,7 +4519,7 @@
 		)
 		(uuid "ff1563de-255d-46d5-a1c8-0d8c6b1e9ad5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.7993 76.2 0)
+			(at 45.7993 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4355,7 +4548,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "60"
+		(property "Value" "62"
 			(at 96.52 52.07 0)
 			(effects
 				(font
@@ -4364,7 +4557,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 97.79 50.8 0)
 			(effects
 				(font
@@ -4383,6 +4576,51 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 97.79 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "541-62UACT-ND"
+			(at 97.79 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC #" "C2088119"
+			(at 97.79 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Vishay"
+			(at 97.79 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "CRCW120662R0JNEAHP"
+			(at 97.79 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "71-CRCW120662R0JNEAH"
 			(at 97.79 50.8 0)
 			(effects
 				(font
@@ -4502,7 +4740,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x8"
 			(at 30.48 162.56 0)
 			(effects
 				(font
@@ -4521,6 +4759,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 30.48 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "2-1445088-8-ND"
+			(at 30.48 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "TE Connectivity"
+			(at 30.48 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2-1445088-8"
+			(at 30.48 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "571-2-1445088-8"
 			(at 30.48 162.56 0)
 			(effects
 				(font
@@ -4657,7 +4931,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x2"
 			(at 92.71 83.82 0)
 			(effects
 				(font
@@ -4676,6 +4950,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Molex"
+			(at 92.71 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601032"
+			(at 92.71 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601032-ND"
+			(at 92.71 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1032"
 			(at 92.71 83.82 0)
 			(effects
 				(font
@@ -4843,7 +5153,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e8c389b-3cd5-41b0-a514-366b7cfa7dad")
-		(property "Reference" "TP3"
+		(property "Reference" "TP2"
 			(at 114.3 34.29 0)
 			(effects
 				(font
@@ -4894,7 +5204,7 @@
 		(instances
 			(project "tsac_distribution"
 				(path "/21492e69-5992-4b1e-a550-dcf3413cdc4e"
-					(reference "TP3")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -4996,7 +5306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x2"
 			(at 96.52 118.11 0)
 			(effects
 				(font
@@ -5023,6 +5333,42 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr" "Molex"
+			(at 96.52 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601002"
+			(at 96.52 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601002-ND"
+			(at 96.52 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1002"
+			(at 96.52 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "182d3798-95d9-4e61-acd2-6901a2d78da2")
 		)
@@ -5040,7 +5386,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 40.64 90.17 180)
+		(at 53.34 82.55 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5049,7 +5395,7 @@
 		(fields_autoplaced yes)
 		(uuid "36c29ce6-795f-49d3-ad6a-7895f39ae09f")
 		(property "Reference" "#FLG01"
-			(at 40.64 92.075 0)
+			(at 53.34 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5058,7 +5404,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 40.64 95.25 0)
+			(at 53.34 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5067,7 +5413,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.64 90.17 0)
+			(at 53.34 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5076,7 +5422,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.64 90.17 0)
+			(at 53.34 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5085,7 +5431,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 40.64 90.17 0)
+			(at 53.34 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5174,6 +5520,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 135.89 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a5a1703-3695-4bf6-a155-e8ca01a24d86")
+		(property "Reference" "#PWR021"
+			(at 135.89 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 135.89 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 135.89 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98c24233-10e3-4f54-b6fb-24e4d6fa2b0a")
+		)
+		(instances
+			(project "tsac_distribution"
+				(path "/21492e69-5992-4b1e-a550-dcf3413cdc4e"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 96.52 161.29 180)
 		(unit 1)
@@ -5201,7 +5614,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x3"
 			(at 96.52 161.29 0)
 			(effects
 				(font
@@ -5220,6 +5633,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Molex"
+			(at 96.52 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601003"
+			(at 96.52 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601003-ND"
+			(at 96.52 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1003"
 			(at 96.52 161.29 0)
 			(effects
 				(font
@@ -5265,7 +5714,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "?"
+		(property "Value" "10n"
 			(at 105.41 52.0762 0)
 			(effects
 				(font
@@ -5274,7 +5723,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 102.87 50.8 0)
 			(effects
 				(font
@@ -5318,7 +5767,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x23")
-		(at 30.48 60.96 180)
+		(at 30.48 60.96 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5334,7 +5784,7 @@
 			)
 		)
 		(property "Value" "Conn_01x23"
-			(at 30.48 29.21 0)
+			(at 30.48 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5342,7 +5792,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:AMPSEAL-23-776087"
 			(at 30.48 60.96 0)
 			(effects
 				(font
@@ -5361,6 +5811,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x23, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 30.48 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "A107007-ND"
+			(at 30.48 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "TE Connectivity"
+			(at 30.48 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "776087-1"
+			(at 30.48 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "571-776087-1"
 			(at 30.48 60.96 0)
 			(effects
 				(font
@@ -5475,7 +5961,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x2"
 			(at 132.08 157.48 0)
 			(effects
 				(font
@@ -5494,6 +5980,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 132.08 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Molex"
+			(at 132.08 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601022"
+			(at 132.08 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601022-ND"
+			(at 132.08 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1022"
 			(at 132.08 157.48 0)
 			(effects
 				(font
@@ -5526,7 +6048,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "649d6382-eb19-4abc-9339-c54ec16b9174")
-		(property "Reference" "TP4"
+		(property "Reference" "TP3"
 			(at 120.65 34.29 0)
 			(effects
 				(font
@@ -5577,7 +6099,74 @@
 		(instances
 			(project "tsac_distribution"
 				(path "/21492e69-5992-4b1e-a550-dcf3413cdc4e"
-					(reference "TP4")
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 135.89 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "68a83261-0cc3-49ef-83ce-10b85a6d3649")
+		(property "Reference" "H1"
+			(at 134.62 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 138.43 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 135.89 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 135.89 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1d4f865-a33e-48c3-a55a-63e2bc65d159")
+		)
+		(instances
+			(project "tsac_distribution"
+				(path "/21492e69-5992-4b1e-a550-dcf3413cdc4e"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -5612,7 +6201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x2"
 			(at 54.61 161.29 0)
 			(effects
 				(font
@@ -5639,6 +6228,42 @@
 				(hide yes)
 			)
 		)
+		(property "Mfr" "Molex"
+			(at 54.61 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601002"
+			(at 54.61 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601002-ND"
+			(at 54.61 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1002"
+			(at 54.61 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "07c31090-8cd6-40ee-abc8-868f53be276b")
 		)
@@ -5655,24 +6280,25 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 66.04 39.37 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 140.97 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "9334e422-59ef-4f43-b5ea-97a327e4ddfd")
-		(property "Reference" "TP2"
-			(at 66.04 34.29 0)
+		(uuid "7acc2366-a42b-4156-9a43-f482dad9eb11")
+		(property "Reference" "H2"
+			(at 139.7 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 68.58 37.3379 0)
+		(property "Value" "MountingHole_Pad"
+			(at 143.51 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5681,8 +6307,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
-			(at 71.12 39.37 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 140.97 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5691,7 +6317,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 39.37 0)
+			(at 140.97 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5699,8 +6325,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
-			(at 66.04 39.37 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 140.97 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5709,12 +6335,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "be9bff24-ab36-4b4e-9209-aaf1f33de104")
+			(uuid "a68f5dbc-8db8-46ef-bbdc-af1c17bf1c72")
 		)
 		(instances
 			(project "tsac_distribution"
 				(path "/21492e69-5992-4b1e-a550-dcf3413cdc4e"
-					(reference "TP2")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -5748,7 +6374,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x2"
 			(at 132.08 167.64 0)
 			(effects
 				(font
@@ -5767,6 +6393,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 132.08 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Molex"
+			(at 132.08 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601002"
+			(at 132.08 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601002-ND"
+			(at 132.08 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1002"
 			(at 132.08 167.64 0)
 			(effects
 				(font
@@ -5817,7 +6479,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 64.77 167.64 0)
 			(effects
 				(font
@@ -5860,6 +6522,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 151.13 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "a685e0ff-ef4a-40ef-90ba-f01e4e1ff0f8")
+		(property "Reference" "H4"
+			(at 149.86 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 153.67 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 151.13 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.13 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 151.13 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af1f2a92-a773-490f-a44c-4654e6ddff2c")
+		)
+		(instances
+			(project "tsac_distribution"
+				(path "/21492e69-5992-4b1e-a550-dcf3413cdc4e"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x08")
 		(at 130.81 125.73 180)
 		(unit 1)
@@ -5887,7 +6616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x8"
 			(at 130.81 125.73 0)
 			(effects
 				(font
@@ -5906,6 +6635,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 130.81 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Molex"
+			(at 130.81 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601008"
+			(at 130.81 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601008-ND"
+			(at 130.81 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1008"
 			(at 130.81 125.73 0)
 			(effects
 				(font
@@ -5948,6 +6713,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 146.05 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "af8647fa-6cd7-4fc8-b98e-480ea42986f2")
+		(property "Reference" "H3"
+			(at 144.78 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 148.59 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 146.05 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 146.05 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7290e3ce-e38d-40ce-900c-0a35fa16bd03")
+		)
+		(instances
+			(project "tsac_distribution"
+				(path "/21492e69-5992-4b1e-a550-dcf3413cdc4e"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 33.02 123.19 180)
 		(unit 1)
@@ -5975,7 +6807,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x2"
 			(at 33.02 123.19 0)
 			(effects
 				(font
@@ -5994,6 +6826,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 33.02 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Molex"
+			(at 33.02 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601002"
+			(at 33.02 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601002-ND"
+			(at 33.02 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1002"
 			(at 33.02 123.19 0)
 			(effects
 				(font
@@ -6113,7 +6981,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x2"
 			(at 96.52 107.95 0)
 			(effects
 				(font
@@ -6132,6 +7000,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Molex"
+			(at 96.52 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601022"
+			(at 96.52 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601022-ND"
+			(at 96.52 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1022"
 			(at 96.52 107.95 0)
 			(effects
 				(font
@@ -6183,7 +7087,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x2"
 			(at 96.52 128.27 0)
 			(effects
 				(font
@@ -6202,6 +7106,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Molex"
+			(at 96.52 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601032"
+			(at 96.52 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601032-ND"
+			(at 96.52 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1032"
 			(at 96.52 128.27 0)
 			(effects
 				(font
@@ -6252,7 +7192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5019_Miniature"
 			(at 66.04 39.37 0)
 			(effects
 				(font
@@ -6271,6 +7211,51 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 60.96 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "36-5019CT-ND"
+			(at 60.96 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC #" "C238131"
+			(at 60.96 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Keystone Electronics"
+			(at 60.96 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "5019"
+			(at 60.96 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "534-5019"
 			(at 60.96 39.37 0)
 			(effects
 				(font
@@ -6319,7 +7304,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x2"
 			(at 33.02 113.03 0)
 			(effects
 				(font
@@ -6338,6 +7323,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 33.02 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Molex"
+			(at 33.02 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601022"
+			(at 33.02 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601022-ND"
+			(at 33.02 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1022"
 			(at 33.02 113.03 0)
 			(effects
 				(font
@@ -6567,7 +7588,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 36.83 90.17 0)
+		(at 49.53 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6576,7 +7597,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7975726-403d-4faf-b4d5-81ac14674fb3")
 		(property "Reference" "#PWR01"
-			(at 36.83 96.52 0)
+			(at 49.53 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6585,7 +7606,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 95.25 0)
+			(at 49.53 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6594,7 +7615,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 90.17 0)
+			(at 49.53 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6603,7 +7624,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 90.17 0)
+			(at 49.53 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6612,7 +7633,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 90.17 0)
+			(at 49.53 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6651,7 +7672,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "60"
+		(property "Value" "62"
 			(at 96.52 41.91 0)
 			(effects
 				(font
@@ -6660,7 +7681,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 97.79 40.64 0)
 			(effects
 				(font
@@ -6679,6 +7700,51 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 97.79 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "541-62UACT-ND"
+			(at 97.79 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC #" "C2088119"
+			(at 97.79 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Vishay"
+			(at 97.79 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "CRCW120662R0JNEAHP"
+			(at 97.79 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "71-CRCW120662R0JNEAH"
 			(at 97.79 40.64 0)
 			(effects
 				(font
@@ -6798,7 +7864,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x2"
 			(at 33.02 133.35 0)
 			(effects
 				(font
@@ -6817,6 +7883,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 33.02 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Molex"
+			(at 33.02 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601002"
+			(at 33.02 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601002-ND"
+			(at 33.02 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1002"
 			(at 33.02 133.35 0)
 			(effects
 				(font
@@ -6867,7 +7969,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 73.66 167.64 0)
 			(effects
 				(font
@@ -6937,7 +8039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x2"
 			(at 130.81 107.95 0)
 			(effects
 				(font
@@ -6956,6 +8058,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 130.81 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Molex"
+			(at 130.81 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601032"
+			(at 130.81 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601032-ND"
+			(at 130.81 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1032"
 			(at 130.81 107.95 0)
 			(effects
 				(font
@@ -7076,7 +8214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "yfs:MolexMicrofitPlus1x2"
 			(at 54.61 168.91 0)
 			(effects
 				(font
@@ -7095,6 +8233,42 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 54.61 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr" "Molex"
+			(at 54.61 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr #" "2157601002"
+			(at 54.61 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey #" "900-2157601002-ND"
+			(at 54.61 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser #" "538-215760-1002"
 			(at 54.61 168.91 0)
 			(effects
 				(font
