@@ -12,6 +12,7 @@
 		(date "2026-06-19")
 		(rev "${REVISION}")
 		(company "York Formula Student")
+		(comment 4 "AISLER Project ID: GQZRPFPC")
 	)
 	(layers
 		(0 "F.Cu" signal)
